@@ -1,12 +1,5 @@
-import { NativeModules } from 'react-native';
-import { toByteArray } from 'base64-js';
-
-const { RNSecureRandom } = NativeModules;
-
-export function generateSecureRandom(length) {
-    if (!RNSecureRandom || !RNSecureRandom.generateSecureRandomAsBase64) {
-        return Promise.reject(Error('react-native-securerandom is not properly linked'));
-    }
-
-    return RNSecureRandom.generateSecureRandomAsBase64(length).then(base64 => toByteArray(base64));
-}
+import { Platform } from 'react-native';
+import { generateSecureRandom as generateSecureRandomisIosOrAndroid  } from 'react-native-securerandom';
+import { harmonyGenerateSecureRandom } from './index.harmony'
+const isIosOrAndroid = Platform.OS === 'android' || Platform.OS === 'ios'
+export const generateSecureRandom = isIosOrAndroid ? generateSecureRandomisIosOrAndroid : harmonyGenerateSecureRandom;
