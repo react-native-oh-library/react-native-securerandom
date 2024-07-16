@@ -1,9 +1,0 @@
-node_modules/
-build/
-.idea
-.gradle
-local.properties
-*.iml
-RNSecureRandomExample/
-flow-typed/
-__tests__/

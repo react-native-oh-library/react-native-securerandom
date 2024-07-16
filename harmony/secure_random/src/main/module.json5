@@ -1,0 +1,11 @@
+{
+  "module": {
+    "name": "secure_random",
+    "type": "har",
+    "deviceTypes": [
+      "default",
+      "tablet",
+      "2in1"
+    ]
+  }
+}

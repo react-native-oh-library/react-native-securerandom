@@ -1,0 +1,11 @@
+{
+  "name": "@react-native-oh-tpl/react-native-securerandom",
+  "version": "1.0.1-0.0.1",
+  "description": "A library to generate cryptographically-secure random bytes",
+  "main": "index.ts",
+  "author": "",
+  "license": "Apache-2.0",
+  "dependencies": {
+    "@rnoh/react-native-openharmony": 'file:../react_native_openharmony'
+  }
+}
