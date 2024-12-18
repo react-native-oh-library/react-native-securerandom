@@ -1,0 +1,11 @@
+[
+    {
+        "Name": "react-native-securerandom",
+        "License": "MIT License",
+        "License File": "https://github.com/robhogan/react-native-securerandom/blob/main/LICENSE",
+        "Version Number": "1.0.1",
+        "Owner" : "xiafeng@huawei.com",
+        "Upstream URL": "https://github.com/robhogan/react-native-securerandom",
+        "Description": "Generate cryptographically-secure random bytes in react native"
+    }
+]
